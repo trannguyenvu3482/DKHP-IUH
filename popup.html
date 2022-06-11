@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    "
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_IUH.png"
+          alt=""
+          style="width: 25%"
+        />
+        <h3 class="header__title">Hỗ trợ đăng kí học phần IUH</h3>
+        <p style="color: red; font-weight: bold">
+          Nhớ luôn bật tab dkhp.iuh.edu.vn và đăng nhập lại khi cần thiết
+        </p>
+      </header>
+      <main class="main">
+        <ul class="nav nav-tabs navigation-tabs main__menu">
+          <li class="nav-item nav-item-1" data-id="1">
+            <a
+              class="nav-link navigation-link active"
+              aria-current="page"
+              href="#"
+              >Lấy danh sách lớp</a
+            >
+          </li>
+          <li class="nav-item nav-item-2" data-id="2">
+            <a class="nav-link navigation-link" aria-current="page" href="#"
+              >Xem chi tiết lớp</a
+            >
+          </li>
+          <li class="nav-item nav-item-3" data-id="3">
+            <a class="nav-link navigation-link" aria-current="page" href="#"
+              >Đăng kí nhanh</a
+            >
+          </li>
+        </ul>
+
+        <div class="content">
+          <section class="section main-section section-1 active">
+            <h2 class="section-title">Lấy danh sách lớp học phần</h2>
+            <div class="section-form">
+              <p style="margin-top: -14px">
+                Mã môn học: 6 số cuối của mã học phần
+              </p>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Mã môn học</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-LDSLHP__maMonHoc__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Ví dụ: 014193"
+                />
+              </div>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >ID đợt</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-LDSLHP__idDot__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Ví dụ: 43 (HK1 năm 3, các học kì sau cứ +1)"
+                />
+              </div>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Mã học phần</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-LDSLHP__DSHP__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Ví dụ: 4203014193"
+                />
+              </div>
+              <a
+                href="https://sv.iuh.edu.vn/chuong-trinh-khung.html"
+                target="_blank"
+                style="margin-top: -10px; align-self: flex-start"
+                >Kiếm mã học phần này ở đâu?</a
+              >
+              <div class="mb-3 input-group input-group-lg"></div>
+              <div class="mb-3"></div>
+              <button
+                class="btn btn-primary btn-lg mx-auto laydslhp-submit-btn"
+              >
+                Khởi chạy
+              </button>
+            </div>
+
+            <div class="section__result" style="margin-top: 10px">
+              <h2 class="section-title">Kết quả</h2>
+              <div class="section__result__content">
+                <table class="section__result__table" id="result__table">
+                  <tr style="background-color: #50a9f2">
+                    <th style="padding-left: 10px">ID</th>
+                    <th>Lớp dự kiến</th>
+                    <th style="padding-right: 10px">Tình trạng hiện tại</th>
+                  </tr>
+
+                  <!-- Loop over array -->
+                  <div
+                    class="section__result__loop"
+                    style="color: red; font-size: 18px; font-weight: bold"
+                  ></div>
+                </table>
+              </div>
+            </div>
+          </section>
+          <section class="section main-section section-2">
+            <h2 class="section-title">Xem chi tiết lớp học</h2>
+            <div class="section-form">
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >ID lớp học</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-xemChiTiet__idLopHoc__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Điền ID lớp học tại đây"
+                />
+              </div>
+              <button
+                class="btn btn-primary btn-lg mx-auto xemChiTiet-submit-btn"
+              >
+                Khởi chạy
+              </button>
+            </div>
+          </section>
+          <section class="section main-section section-3">
+            <h2 class="section-title">Đăng kí nhanh LHP</h2>
+            <p>Lưu ý, nếu lớp không có thực hành thì hãy bỏ trống ô cuối!</p>
+            <div class="section-form">
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >ID lớp học</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-DKN__idLopHoc__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="Điền ID lớp học tại đây"
+                />
+              </div>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Loại đăng kí</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-DKN__loaiDangKy__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="1 là học mới, 2 là học lại, 3 là học cải thiện"
+                />
+              </div>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >ID đợt</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-DKN__idDot__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="43 tức là HK1 năm 2, kì kế tiếp sẽ +1"
+                />
+              </div>
+              <div class="mb-3 input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Nhóm thực hành</span
+                >
+                <input
+                  type="text"
+                  class="form-control section-DKN__nhomThucHanh__input"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-sm"
+                  placeholder="VD: 1, 2 hoặc 3"
+                />
+              </div>
+              <button class="btn btn-primary btn-lg mx-auto dkn-submit-btn">
+                Khởi chạy
+              </button>
+            </div>
+
+            <div
+              class="section-DKN__result__box"
+              style="
+                margin-top: 10px;
+                color: red;
+                font-size: 30px;
+                font-weight: bold;
+              "
+            ></div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="copyright">
+          <h5>
+            © Made by
+            <a href="https://www.facebook.com/DuzFromSOL/" target="_blank"
+              >Duz - Trần Nguyên Vũ</a
+            >
+            - 2022
+          </h5>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
