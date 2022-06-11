@@ -5,7 +5,7 @@
 ## Cách sử dụng:
 
 - Vào link Github của Extension này: [https://github.com/trannguyenvu3482/DKHP-IUH](https://github.com/trannguyenvu3482/DKHP-IUH)
-- Chọn vào nút Code ở xanh và chọn "Download as ZIP"
+- Chọn vào nút Code màu xanh lá ở trên góc và chọn "Download as ZIP"
 - Sau khi tải xong, giải nén ra folder
 - Bật Google Chrome hoặc trình duyệt Chromium và nhập "chrome://extensions/" vào trình duyệt
 - Chọn "Load unpacked extension"
