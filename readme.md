@@ -22,7 +22,7 @@
 
 - Mã môn học: 6 số cuối của mã học phần (VD: 014693)
 - ID đợt: Học kì 1 của năm 2 là 43, các học kì sau cứ tăng dần lên 1
-- Mã học phần: Là dãy số của môn học, tra ở chương trình khung của web [sv.iuh.edu.vn](sv.iuh.edu.vn)
+- Mã học phần: Là dãy số của môn học, tra ở chương trình khung của web [https://sv.iuh.edu.vn](https://sv.iuh.edu.vn)
 
 **Kết quả trả về: **
 
