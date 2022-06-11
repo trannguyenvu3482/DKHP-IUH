@@ -2,7 +2,7 @@
 
 ## Công nghệ sử dụng: HTML, CSS, JavaScript thuần
 
-## Cách sử dụng:
+## Cách cài Extension:
 
 - Vào link Github của Extension này: [https://github.com/trannguyenvu3482/DKHP-IUH](https://github.com/trannguyenvu3482/DKHP-IUH)
 - Chọn vào nút Code màu xanh lá ở trên góc và chọn "Download as ZIP"
@@ -12,7 +12,7 @@
 - Trỏ đến thư mục vừa giải nén và chọn "Load"
 - Sau khi nạp xong, bạn sẽ thấy Extension đã được nạp vào trình duyệt, nếu chưa, hãy tắt mở lại trình duyệt
 
-## Các chức năng hỗ trợ:
+## Các chức năng hỗ trợ và Hướng dẫn sử dụng:
 
 ### Lấy danh sách lớp học phần
 
