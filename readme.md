@@ -2,6 +2,8 @@
 
 ## Công nghệ sử dụng: HTML, CSS, JavaScript thuần
 
+## Lưu ý: Nếu trường đổi API thì Extension sẽ bị lỗi!
+
 ## Cách cài Extension:
 
 - Vào link Github của Extension này: [https://github.com/trannguyenvu3482/DKHP-IUH](https://github.com/trannguyenvu3482/DKHP-IUH)
