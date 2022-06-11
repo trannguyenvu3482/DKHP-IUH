@@ -30,4 +30,8 @@
 
 ### Xem chi tiết lớp học phần
 
+#### Chưa update
+
 ### Đăng kí nhanh bằng ID lớp học phần
+
+#### Chưa update
