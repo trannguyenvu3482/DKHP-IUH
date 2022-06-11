@@ -3,9 +3,6 @@
   "description": "Extension dùng để hỗ trợ đăng kí học phần cho sinh viên IUH",
   "version": "0.6.9",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html"

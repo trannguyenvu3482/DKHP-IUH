@@ -28,6 +28,18 @@ navTabs.addEventListener('click', (e) => {
 
 // Register button handler
 document.addEventListener('DOMContentLoaded', () => {
+  chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
+    let url = tabs[0].url;
+
+    if (url && url.includes('dkhp.iuh.edu.vn')) {
+      console.log('This is the right page');
+    } else {
+      $('.main').innerHTML = `
+         <span style="font-size: 28px; font-weight: bold"> Hãy dùng extension này tại <a href="http://dkhp.iuh.edu.vn">dkhp.iuh.edu.vn</a>!</span>
+      `;
+    }
+  });
+
   // Reset localStorage
   localStorage.setItem('result', '');
 
