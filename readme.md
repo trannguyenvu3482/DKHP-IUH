@@ -2,6 +2,16 @@
 
 ## Công nghệ sử dụng: HTML, CSS, JavaScript thuần
 
+## Cách sử dụng:
+
+- Vào link Github của Extension này: [https://github.com/trannguyenvu3482/DKHP-IUH](https://github.com/trannguyenvu3482/DKHP-IUH)
+- Chọn vào nút Code ở xanh và chọn "Download as ZIP"
+- Sau khi tải xong, giải nén ra folder
+- Bật Google Chrome hoặc trình duyệt Chromium và nhập "chrome://extensions/" vào trình duyệt
+- Chọn "Load unpacked extension"
+- Trỏ đến thư mục vừa giải nén và chọn "Load"
+- Sau khi nạp xong, bạn sẽ thấy Extension đã được nạp vào trình duyệt, nếu chưa, hãy tắt mở lại trình duyệt
+
 ## Các chức năng hỗ trợ:
 
 ### Lấy danh sách lớp học phần
