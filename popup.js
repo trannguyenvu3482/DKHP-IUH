@@ -29,10 +29,14 @@ navTabs.addEventListener('click', (e) => {
 // Register button handler
 document.addEventListener('DOMContentLoaded', () => {
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
-    let url = tabs[0].url;
+    let url = tabs[0].url.toLowerCase();
 
     if (url && url.includes('dkhp.iuh.edu.vn')) {
-      console.log('This is the right page');
+      if (url.includes('login')) {
+        $('.main').innerHTML = `
+         <span style="font-size: 28px; font-weight: bold"> Hãy đăng nhập vào tài khoản sinh viên của bạn trước khi sử dụng Extension!</span>
+      `;
+      }
     } else {
       $('.main').innerHTML = `
          <span style="font-size: 28px; font-weight: bold"> Hãy dùng extension này tại <a href="http://dkhp.iuh.edu.vn">dkhp.iuh.edu.vn</a>!</span>
