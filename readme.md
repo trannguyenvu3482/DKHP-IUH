@@ -47,3 +47,14 @@
 ### Đăng kí nhanh bằng ID lớp học phần
 
 #### Chưa update
+
+## Demo:
+
+- Menu chính:
+  ![MainMenu](./images/demos/MainMenu.png)
+- Menu đăng kí nhanh:
+  ![QuickRegister](./images/demos/QuickRegister.png)
+- Đăng nhập sai trang:
+  ![WrongPage](./images/demos/WrongPage.png)
+- Chưa đăng nhập:
+  ![NotLoginError](./images/demos/NotLoginError.png)
