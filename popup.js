@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-// variables
+// Global variables
 const navTabs = $('.navigation-tabs');
 const getClassListBtn = $('.laydslhp-submit-btn');
 const getClassInfoBtn = $('.xemChiTiet-submit-btn');
@@ -63,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
       DSHP: $('.section-LDSLHP__DSHP__input').value,
     };
 
-    console.log(inputObject);
-
     const fetchData = async () => {
       try {
         let myHeaders = new Headers();
@@ -101,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderData = async () => {
-      console.log('RENDERING!');
       // Get result from localstorage and turn into JSON
       const result = localStorage.getItem('result');
       const resultData = JSON.parse(result);
@@ -113,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Render each item in resultJSON to table
       resultData.forEach((item) => {
-        console.log('RENDER DATA!');
         let resultJSONHtml = `
         <tr>
           <td style="padding-left: 10px;">${item.IdLopHocPhanString}</td>
@@ -126,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      console.log(resultHTML);
       resultContent.insertAdjacentHTML('beforeend', resultHTML);
     };
 
@@ -156,8 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let inputObject = {
       idLopHocPhan: $('.section-xemChiTiet__idLopHoc__input').value,
     };
-
-    console.log(inputObject);
 
     const fetchData = async () => {
       try {
@@ -190,13 +183,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderData = async () => {
-      console.log('RENDERING!');
       // Get result from localstorage and turn into JSON
       const result = localStorage.getItem('result');
       const resData = JSON.parse(result);
       const resultData = resData.ListLichHoc;
-
-      console.log(resultData);
 
       // Nếu không có ID thì thoát hàm
       if (!resultData) return;
@@ -211,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Render each item to table
       resultData.forEach((item) => {
-        console.log('RENDER DATA!');
         let resultJSONHtml = `
         <tr>
           <td style="padding-left: 10px;">${item.LichHoc}</td>
@@ -224,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      console.log(resultHTML);
       xemChitietTable.insertAdjacentHTML('beforeend', resultHTML);
     };
 
@@ -261,8 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nhomThucHanh: $('.section-DKN__nhomThucHanh__input').value,
     };
 
-    console.log(inputObject);
-
     const fetchData = async () => {
       try {
         let myHeaders = new Headers();
@@ -287,7 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json();
         if (data) {
           fetchSuccess = true;
-          console.log('Đăng kí thành công');
         }
       } catch (error) {
         resultTextBox.textContent =
