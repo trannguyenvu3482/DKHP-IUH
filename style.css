@@ -58,11 +58,22 @@ h6 {
 .section__result__table td,
 .section__result__table th {
   text-align: center;
-  padding: 8px;
+  padding: 4px;
 }
 table,
 .section__result__table td,
 .section__result__table th {
+  border: 1px solid black;
+}
+
+.section__result__xemChiTiet__table td,
+.section__result__xemChiTiet__table th {
+  text-align: center;
+  padding: 4px;
+}
+table,
+.section__result__xemChiTiet__table td,
+.section__result__xemChiTiet__table th {
   border: 1px solid black;
 }
 

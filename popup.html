@@ -98,11 +98,18 @@
               >
               <div class="mb-3 input-group input-group-lg"></div>
               <div class="mb-3"></div>
-              <button
-                class="btn btn-primary btn-lg mx-auto laydslhp-submit-btn"
-              >
-                Khởi chạy
-              </button>
+              <div>
+                <button
+                  class="btn btn-primary btn-lg mx-auto laydslhp-submit-btn"
+                >
+                  Khởi chạy
+                </button>
+                <button
+                  class="btn btn-primary btn-lg mx-auto laydslhp-clear-btn"
+                >
+                  Xóa bảng
+                </button>
+              </div>
             </div>
 
             <div class="section__result" style="margin-top: 10px">
@@ -139,11 +146,42 @@
                   placeholder="Điền ID lớp học tại đây"
                 />
               </div>
-              <button
-                class="btn btn-primary btn-lg mx-auto xemChiTiet-submit-btn"
-              >
-                Khởi chạy
-              </button>
+              <div>
+                <button
+                  class="btn btn-primary btn-lg mx-auto xemChiTiet-submit-btn"
+                >
+                  Khởi chạy
+                </button>
+                <button
+                  class="btn btn-primary btn-lg mx-auto xemChiTiet-clear-btn"
+                >
+                  Xóa bảng
+                </button>
+              </div>
+            </div>
+
+            <div class="section__result" style="margin-top: 10px">
+              <h2 class="section-title">Kết quả</h2>
+              <h4 style="color: red; font-weight: 600">
+                ID hiện tại:
+                <span class="section__result__idHienTai"></span>
+              </h4>
+              <div class="section__result__content">
+                <table class="section__result__xemChiTiet__table">
+                  <tr style="background-color: #50a9f2">
+                    <th style="padding-left: 10px">Lịch học</th>
+                    <th>Phòng</th>
+                    <th>Giảng viên</th>
+                    <th style="padding-right: 10px">Nhóm TH</th>
+                  </tr>
+
+                  <!-- Loop over array -->
+                  <div
+                    class="section__result__xemChiTiet__loop"
+                    style="color: red; font-size: 18px; font-weight: bold"
+                  ></div>
+                </table>
+              </div>
             </div>
           </section>
           <section class="section main-section section-3">
