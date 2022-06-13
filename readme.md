@@ -1,4 +1,5 @@
 # Extension hỗ trợ đăng kí học phần IUH
+## Version hiện tại: 0.6.9 Beta
 
 ## Công nghệ sử dụng: HTML, CSS, JavaScript thuần
 
