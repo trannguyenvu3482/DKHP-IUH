@@ -8,12 +8,15 @@
 ## Cách cài Extension:
 
 - Vào link Github của Extension này: [https://github.com/trannguyenvu3482/DKHP-IUH](https://github.com/trannguyenvu3482/DKHP-IUH)
-- Chọn vào nút Code màu xanh lá ở trên góc và chọn "Download as ZIP"
-- Sau khi tải xong, giải nén ra folder
+- Chọn vào nút Code màu xanh lá ở trên góc và chọn "Download ZIP"
+- Sau khi tải xong, kéo file giải nén vào một folder trống
+- Chuột phải file nén, chọn Extract Here
 - Bật Google Chrome hoặc trình duyệt Chromium và nhập "chrome://extensions/" vào trình duyệt
 - Chọn "Load unpacked extension"
-- Trỏ đến thư mục vừa giải nén và chọn "Load"
-- Sau khi nạp xong, bạn sẽ thấy Extension đã được nạp vào trình duyệt, nếu chưa, hãy tắt mở lại trình duyệt
+- Trỏ đến thư mục chứa tất cả file vừa giải nén và chọn "Load"
+- Sau khi laod xong, bạn sẽ thấy Extension đã được nạp vào trình duyệt, nếu chưa, hãy tắt mở lại trình duyệt
+
+**Lưu ý: Sau khi tải xong Extension có thể nó sẽ bị ẩn đi, hãy tìm biểu tượng Extension trên góc là ghim nó lại**
 
 ## Các chức năng hỗ trợ và Hướng dẫn sử dụng:
 
